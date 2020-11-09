@@ -1,0 +1,26 @@
+﻿@model IEnumerable<firsaty.Models.Silder>
+
+<!-- Slide -->
+<div class="slide-fullw">
+    <div class="js-slider-home2">
+
+
+        @foreach (var item in Model)
+        {<div class="e-slide-img">
+                <img src="https://admin.firsaty.com/@item.Image" alt="">
+                <div class="slide-content v4 box-center">
+                    <div class="container container-240">
+                        <p class="cate"> @Html.DisplayFor(modelItem => item.Title)</p>
+                        <h3 class="v4"> @Html.DisplayFor(modelItem => item.Description)</h3>
+
+                        <a href=" @Html.DisplayFor(modelItem => item.URL)" class="slide-btn e-orange-gradient" tabindex="0">اقراء اكثر<i class="ion-ios-arrow-forward"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        }
+
+
+
+    </div>
+</div>
