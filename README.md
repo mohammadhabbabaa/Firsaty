@@ -1,2 +1,2 @@
-# bicisim_ornek
+# FIRSATY 
 ornek proje
