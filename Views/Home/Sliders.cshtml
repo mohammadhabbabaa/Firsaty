@@ -1,0 +1,23 @@
+﻿
+@model IEnumerable<firsaty.Models.Silder>
+
+@{ Layout = null;}
+<!-- Slide -->
+<div class="slide-fullw">
+    <div class="js-slider-home2">
+
+
+        @foreach (var item in Model)
+        {
+            <div class="e-slide-img">
+             <a href=" @Html.DisplayFor(modelItem => item.URL)">
+                 <img src="https://admin.firsaty.com/@item.Image" class="myImage" alt="">
+             </a>
+            </div>
+
+        }
+
+
+
+    </div>
+</div>

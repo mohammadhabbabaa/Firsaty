@@ -1,0 +1,22 @@
+﻿@model firsaty.Models.PDF
+
+@{
+    ViewBag.Title = "PDF";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="e-category" dir="rtl">
+    <div class="container container-240">
+        <div class="title-icon t-column mg-50">
+            <div class="t-inside">
+               
+                <img src="https://admin.firsaty.com/@Model.Image" style="max-height:50px;" alt="Alternate Text" />
+        
+        </div>
+        </div>
+</div>
+        <iframe src="@Model.URL"
+                width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+
+
+        @{ Html.RenderAction("proshur"); }

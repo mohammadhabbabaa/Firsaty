@@ -1,0 +1,11 @@
+﻿@model IEnumerable<firsaty.Models.Category>
+
+@{
+
+    Layout = null;
+}
+
+@foreach (var item in Model)
+{
+   <li><a href="#">@item.Name</a></li>
+}
